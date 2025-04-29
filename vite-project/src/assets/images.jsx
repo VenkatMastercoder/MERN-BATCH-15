@@ -1,0 +1,1 @@
+export const carImageLink = "https://ik.imagekit.io/4z8covdo9/Batch%2014/car.jpg"

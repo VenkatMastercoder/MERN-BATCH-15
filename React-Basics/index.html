@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>React Day-1</title>
+</head>
+
+<body>
+
+  <!--We Installed React Via CDN-->
+  <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+  <!--We Installed React Via Local Storage-->
+  <script crossorigin src="./react.development.js"></script>
+  <script crossorigin src="./react-dom.development.js"></script>
+
+  <div id="root">Not Render</div>
+  <p>Hello</p>
+
+  <script>
+    // const paragraphElement = document.getElementById("para");
+    // const btnElement = document.getElementById("btnElement");
+
+    // btnElement.addEventListener("click", () => {
+    //   paragraphElement.textContent = "Hi.. React"
+    // })
+
+    // <p>Hello</p>
+    const paragraphElement = React.createElement("p", null, "Hello"); // <p>Hello</p>
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(paragraphElement);
+
+
+
+  </script>
+
+
+
+</body>
+
+</html>
